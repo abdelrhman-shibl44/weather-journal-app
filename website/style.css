@@ -29,6 +29,27 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+/* make design responsive */
+@media(max-width:840px) {
+    #app {
+        text-align: center;
+    }
+
+    input {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+
+    #generate {
+        margin-top: 20px;
+        width: 85%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}
+
 .holder {}
 
 .entry {
