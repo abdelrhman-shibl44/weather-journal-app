@@ -44,6 +44,7 @@ body {
 
     textarea {
         width: 80%;
+        height: 100px !important;
     }
 
     .entry>.title {
@@ -61,6 +62,7 @@ body {
     margin: 5px auto;
     text-indent: 10px;
     text-align: left;
+    min-height: 22px;
 }
 
 .entry>.title {
