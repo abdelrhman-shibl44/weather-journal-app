@@ -27,6 +27,11 @@ body {
         text-align: center;
     }
 
+    .headline {
+        height: 80px !important;
+        line-height: 80px !important;
+    }
+
     input {
         width: 70% !important;
         margin: 0 auto;
