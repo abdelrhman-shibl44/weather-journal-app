@@ -27,10 +27,9 @@ function listening() {
 };
 // add get route to send all data to our app;
 app.get("/all", (req, res) => {
-    res.send(projectData)
-    console.log(projectData);
+    res.send(projectData); // send data to app.js by "/all" path;
 });
-// add post route that to store and save coming data;
+// add post route to store and save coming data;
 app.post("/sendWeatherData", (req, res) => {
     let body = req.body
     const newEntry = {
@@ -38,7 +37,9 @@ app.post("/sendWeatherData", (req, res) => {
         date: body.date,
         userResponse: body.user
     };
+    // put the data into our object;
     projectData = newEntry;
     // send the data for test 
     res.send(projectData)
 });
+// end coding;

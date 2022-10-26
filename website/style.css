@@ -13,7 +13,6 @@ body {
 #app {
     display: grid;
     grid-auto-rows: minmax(90px, auto);
-    /* grid-auto-columns: 90%; */
     height: 100vh;
     background: #555;
     color: #f0d43a;
@@ -41,6 +40,10 @@ body {
     textarea {
         width: 80%;
     }
+
+    .entry>.title {
+        padding-left: 0 !important
+    }
 }
 
 .entry {
@@ -51,6 +54,12 @@ body {
     background-color: #000;
     width: 80%;
     margin: 5px auto;
+    text-indent: 10px;
+    text-align: left;
+}
+
+.entry>.title {
+    padding-left: 10px;
 }
 
 .headline {
@@ -65,7 +74,10 @@ body {
     overflow: hidden;
 }
 
-.title {}
+span.title {
+    color: #bd7c20;
+    font-weight: bold;
+}
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
 label {
@@ -146,3 +158,5 @@ button:focus {
     font-family: 'Oswald', sans-serif;
 
 }
+
+/*end coding*/
