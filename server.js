@@ -3,7 +3,7 @@ projectData = {};
 // Require Express to run server and routes
 const express = require("express");
 // Require bodyParser to parse the data and convert it to json file
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
 // Start up an instance of app
 const app = express();
 /* Middleware*/

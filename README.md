@@ -23,4 +23,4 @@ Responsive asynchronous web app uses web api and user data.
 
 1. GET route
 2. POST route
-3. addEventListener()
+3. AddEventListener()

@@ -2,7 +2,7 @@
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather?zip=";//base url of weatherMap
 const apiKey = ",&appid=6bf622e0d3abb3b2a045c44671b70209&units=imperial";//my personal apikey
 const generate = document.getElementById("generate");//the button to generate the data;
-const theServer = "http://127.0.0.1:8080";//the url of our server 
+const serverUrl = "http://127.0.0.1:8080";//the url of our server 
 // Create a new date instance dynamically with JS
 let d = new Date();
 //getMonth returns zero-based number between 0 and 11 so i add one to be (one-based value);
@@ -20,10 +20,10 @@ generate.addEventListener("click", () => {
         .then(data => {
             // get data from object by destructuring expression to unpack data 
             const { main: { temp } } = data;
-            return postData(theServer + "/sendWeatherData", { temp: temp, user: feelings, date: newDate });
+            return postData(serverUrl + "/sendWeatherData", { temp: Math.round(temp), user: feelings, date: newDate });
         })
         // after send data to server we will get data from it and update our user interface
-        .then(() => updateUI(theServer + "/all"));
+        .then(() => updateUI(serverUrl + "/all"));
 
 });
 // get the data from api 
@@ -32,7 +32,6 @@ const getWeatherData = async (baseUrl, zipCode, apiKey) => {
     try {
         // convert it to json or text file 
         const newData = await res.json();
-        console.log(newData);
         return newData;
     } catch (error) {
         console.log("error", error);
