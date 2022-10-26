@@ -1,10 +1,26 @@
 # Weather-Journal App Project
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+## Description
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+Responsive asynchronous web app uses web api and user data.
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+## Requirements:
+
+1. Create local server producing feedback to the command line .
+2. Create API credentials on OpenWeaterMap.com .
+3. Last part of API key should include `&units=imperial` .
+4. Setup get route on the server side to return an object .
+5. Create asynchronous function on client side to fetch data from app endpoint .
+6. Setup post route on the server side and executed on the client side .
+7. Create async function to retrieve app's data on client side .
+8. Updata data to the DOM element .
+
+## Additional features:
+
+- Responsive layout
+
+## API, and methods Used
+
+1. GET route
+2. POST route
+3. addEventListener()
