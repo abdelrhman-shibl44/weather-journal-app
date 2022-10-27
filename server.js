@@ -18,7 +18,7 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static('website'));
 // Setup Server
-const port = 8080;
+const port = process.env.PORT || 8080;
 const server = app.listen(port, listening);
 function listening() {
     //test our server 
